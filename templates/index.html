@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Ctrl-F</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
+
+        <script src="https://use.fontawesome.com/887ab12b99.js"></script>
+        
+    </head>
+    <body background="/static/css/tweed.png">
+
+        <div class="container-fluid" align="center">
+
+          <div id="top">
+
+              <div class="row" id="head" align="left">
+
+                  <h1 style="top: 10px;"><font color="#4885ed">Y</font><font color="#f4c20d">o</font><font color="#db3236">o</font><font color="#4885ed">g</font><font color="#3cba54">l</font><font color="#db3236">e</font></h1>
+
+              </div>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <span>
+
+                <div>
+
+                  <form id="user-info" class="form-inline row">
+
+                      <input type="text" id="search-keyword" class="form-control mb-2 mr-sm-2 mb-sm-0" name="keyword" placeholder="Keyword Search">
+
+                      <input type="url" id="youtube-url" class="form-control mb-2 mr-sm-2 mb-sm-0" name="url" placeholder="Youtube URL">
+
+                      <button id="submit-user-info" type="submit" class="btn">Search</button>
+
+                  </form>
+
+                </div>
+
+              </span>
+
+            </div>
+
+            <br>
+
+            <br>
+
+            <div class="row">
+
+                <div id="youtube-video" class="col-xs-6">
+
+                    <iframe id="embedded-video" width="854" height="480" src="https://www.youtube.com/embed/q6Pq9uZvfNM" frameborder="0"
+                            allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+            <br>
+
+            <br>
+
+            <div class="row">
+
+                <pre id="results">
+
+	                 <!-- Timestamp results are prepended here -->
+
+                </pre>
+
+            </div>
+
+            <div id="footer" class="row">
+
+              <p style="color: black">Made with &hearts; by Abhinav Kaushal Keshari, Rajat  Sharma &amp; Vivek Gupta </p>
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/style.js') }}"></script>
+</html>
