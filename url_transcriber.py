@@ -44,7 +44,7 @@ def searchKeyword(youtube_url, keyword):
     if not keyword or not youtube_url:
         return timestamps
 
-    status_code, content = transcribe_video(youtube_url)
+    status_code, content = transcribedVideo(youtube_url)
 
     if not content:
         print("NO CONTENT")
