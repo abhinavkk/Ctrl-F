@@ -25,7 +25,7 @@ def transcribedVideo(youtube_url):
 
     "Transcribe youtube video"
     
-    id = get_video_id(youtube_url)
+    id = videoId(youtube_url)
 
     url = getTranscribedUrl("https://www.youtube.com/watch?v={}".format(id))
 
