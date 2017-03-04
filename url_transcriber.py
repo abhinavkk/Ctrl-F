@@ -5,7 +5,7 @@ from url_transcript import getTranscribedUrl
 
 OK = 200
 
-def VideoId(url):
+def videoId(url):
 
     " Get youtube id from the url"
     
